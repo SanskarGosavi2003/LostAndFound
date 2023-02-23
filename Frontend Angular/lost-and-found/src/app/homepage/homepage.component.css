@@ -1,0 +1,33 @@
+* {
+    border: 0;
+    margin: 0;
+}
+
+body {
+
+
+
+
+    margin: 0px;
+    padding: 0%;
+    height: 900px;
+}
+
+
+.flex-container {
+
+    flex-direction: row;
+    display: flex;
+    margin-top: 100px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+[class ^="block-"] {
+    display: flex;
+    flex-direction: row;
+
+
+}

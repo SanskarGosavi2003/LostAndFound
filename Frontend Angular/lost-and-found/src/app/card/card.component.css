@@ -1,0 +1,66 @@
+mat-card {
+    max-width: 90%;
+    margin: 10px auto;
+    background-color: #fff;
+    border-radius: 4%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    ;
+
+
+
+}
+
+mat-card:hover {
+    transform: scale(1.05);
+}
+
+mat-card-title {
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+mat-card-content {
+    font-size: 1vw;
+    line-height: 1.5;
+}
+
+mat-card-actions {
+    display: flex;
+    justify-content: center;
+
+}
+
+mat-card-actions button {
+    background-color: #373839;
+    color: #fff;
+    border: none;
+    border-radius: 7%;
+    padding: 2% 4%;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: rgba(72, 43, 147, 0.5);
+
+}
+
+mat-card-actions button:hover {
+    background-color: #0069d9;
+}
+
+
+
+.container-2 {
+    justify-content: center;
+}
+
+img {
+    opacity: 0.9;
+    position: relative;
+    margin: 25px 5px;
+    border-radius: 10px;
+    width: 80%;
+    align-self: center;
+
+}
