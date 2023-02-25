@@ -1,12 +1,13 @@
 * {
-    border: 0;
-    margin: 0;
+    border: 0px;
+    margin: 0%;
+    padding: 0%;
 }
 
 body {
 
 
-
+    background: linear-gradient(to top right, #6d03ee 0%, #FDD563 100%);
 
     margin: 0px;
     padding: 0%;
@@ -14,20 +15,31 @@ body {
 }
 
 
+
+
 .flex-container {
 
     flex-direction: row;
     display: flex;
-    margin-top: 100px;
+    margin-top: 30px;
     max-width: 100%;
     flex-wrap: wrap;
     align-items: center;
+    margin-left: 5%;
 
 }
 
-[class ^="block-"] {
-    display: flex;
-    flex-direction: row;
 
+.container-2 {
+
+    margin-left: 10%;
+    margin-top: 50px;
+
+
+}
+
+.flex-container-2 {
+    margin-left: 10%;
+    margin-top: 30px;
 
 }

@@ -4,8 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { NavbarComponent } from './homepage/navbar/navbar.component';
-import { ItemsComponent } from './homepage/items/items.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from "@angular/material/button";
@@ -14,16 +12,26 @@ import { HttpClientModule } from "@angular/common/http";
 import { CardComponent } from './card/card.component';
 import { MatDialogModule } from "@angular/material/dialog";
 import { PopupComponent } from "./popup/popup.component";
+import { SearchTabComponent } from './search-tab/search-tab.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { PreviousLostComponent } from './previous-lost/previous-lost.component';
+import { PreviousLostCardComponent } from './previous-lost-card/previous-lost-card.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    NavbarComponent,
-    ItemsComponent,
     CardComponent,
     PopupComponent,
+    SearchTabComponent,
+    NavbarComponent,
+    PreviousLostComponent,
+    PreviousLostCardComponent,
+
 
 
 
@@ -38,6 +46,7 @@ import { PopupComponent } from "./popup/popup.component";
     FlexLayoutModule,
     HttpClientModule,
     MatDialogModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

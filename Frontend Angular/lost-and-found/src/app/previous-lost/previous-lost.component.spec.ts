@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ItemsComponent } from './items.component';
+import { PreviousLostComponent } from './previous-lost.component';
 
-describe('ItemsComponent', () => {
-  let component: ItemsComponent;
-  let fixture: ComponentFixture<ItemsComponent>;
+describe('PreviousLostComponent', () => {
+  let component: PreviousLostComponent;
+  let fixture: ComponentFixture<PreviousLostComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ItemsComponent ]
+      declarations: [ PreviousLostComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ItemsComponent);
+    fixture = TestBed.createComponent(PreviousLostComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

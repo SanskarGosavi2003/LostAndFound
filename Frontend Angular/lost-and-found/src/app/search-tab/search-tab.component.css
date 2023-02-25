@@ -1,0 +1,15 @@
+button {
+    margin-left: 5px;
+    border-radius: 2px;
+    color: linear-gradient(#8E5ACC 0%, #B005AA 100%);
+    background-color: grey;
+}
+
+button:checked {
+    background-color: #8E5ACC;
+}
+
+.searchTab {
+    display: flex;
+    flex-wrap: wrap;
+}

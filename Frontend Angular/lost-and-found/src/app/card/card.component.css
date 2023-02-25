@@ -6,7 +6,7 @@ mat-card {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     max-height: 400px;
     background-color: rgba(0, 0, 0, 0.5);
-    ;
+
 
 
 
@@ -19,11 +19,13 @@ mat-card:hover {
 mat-card-title {
     font-size: 1.5vw;
     font-weight: 100;
+    color: #fff;
 }
 
 mat-card-content {
     font-size: 1vw;
     line-height: 1.5;
+    color: #fff;
 }
 
 mat-card-actions {
@@ -42,6 +44,7 @@ mat-card-actions button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     background-color: rgba(72, 43, 147, 0.5);
+    opacity: 0.8;
 
 }
 
@@ -63,4 +66,9 @@ img {
     width: 80%;
     align-self: center;
 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
 }
