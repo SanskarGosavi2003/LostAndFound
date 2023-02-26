@@ -2,5 +2,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.item_list),
+    path('lost/', views.item_lost),
+    path('found/',views.items_found),
 ]
