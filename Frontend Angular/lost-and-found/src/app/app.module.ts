@@ -4,19 +4,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OpeningpageComponent } from './openingpage/openingpage.component';
+
 import { LoginComponent } from './login/login.component';
 import { MatButtonModule } from '@angular/material';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatRippleModule } from '@angular/material/core';
-
+import { ProfileComponent } from './profile/profile.component';
+import { SignupComponent } from './signup/signup.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RequestssearchComponent } from './requestssearch/requestssearch.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
-    OpeningpageComponent,
-    LoginComponent
+    LoginComponent,
+    ProfileComponent,
+    SignupComponent,
+    RequestssearchComponent
   ],
   imports: [
     MatButtonModule,
@@ -24,6 +29,7 @@ import { MatRippleModule } from '@angular/material/core';
     MatInputModule,
     MatRippleModule,
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     ReactiveFormsModule
   ],

@@ -91,14 +91,14 @@ background-color: rgba(0, 0, 0, 0.01);
 .em{
     
     position: absolute;
-    right: 40%;
-    top:57%;
+    right: 41%;
+    top:58%;
     width: 3%;
 }
 .pass{
     position: absolute;
-    right: 40%;
-    top:65%;
+    right: 41%;
+    top:67%;
     width: 3%;
 }
 
@@ -117,15 +117,18 @@ div{
 }
 .main{
     color: white;
-    
-    font-size: 165%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    font-size: 145%;
     background-color: #3a2466;
 }
 a{
     text-decoration: none;
     font-size: 110%;
     background-color: rgba(0, 0, 0, 0.01);
-    
+     
 }
 button{
     display: inline;
@@ -145,6 +148,7 @@ button{
 }
 
 input{
+    width: 100%;
     display: inline;
     font-size: 80%;
     padding-left: 5%;
@@ -158,14 +162,18 @@ mat-form-field{
     margin-left: auto;
       margin-right: auto;
       padding-left: 0%;
+    padding-right: 7%;
       height: px;
-      width: 70%;
+      width: 60%;
       background-color: #F3F3F3;
 }
 .form{
     
     border-color: rgba(255, 230, 1, 0.844);
     padding: 0%;
+}
+.foot>a{
+    color: #6d03ee;
 }
 
 footer{
@@ -174,7 +182,7 @@ footer{
     color: white;
     padding-left: 5%;
     padding-top: 5%;
-    font-size: 61%;
+    font-size: 65%;
   }
 }
 
@@ -225,10 +233,25 @@ footer{
         text-align: left;
         padding-left: 16%;
     }
-    a{
+    .main{
         text-decoration: none;
-        font-size: 140%;
+        font-size: 180%;
         color: white;
+        background-color: yellow;
+        display: block;
+        position: relative;
+        top: 10px;
+        
+        margin-left: auto;
+          margin-right: auto;
+          width: 80%;
+          
+        background-color: rgba(255, 230, 1, 0.844);
+        padding: 4%;
+        padding-bottom: 10%;
+        border: 4px;
+        border-color: rgba(255, 230, 1, 0.844);
+        border-radius: 15px;
     }
     footer>a{
         color: blue;
@@ -240,6 +263,10 @@ footer{
         
   font-family: Arial, Helvetica, sans-serif;
   
+    }
+
+    .foot>a{
+        color: #6d03ee;
     }
     img{
         height: 0px;
@@ -263,20 +290,8 @@ footer{
           width: 70%;
           background-color: whitesmoke;
     }
-    button{
-        display: block;
-        position: relative;
-        top: 10px;
-        
-        margin-left: auto;
-          margin-right: auto;
-          width: 80%;
-          
-        background-color: rgba(255, 230, 1, 0.844);
-        padding: 4%;
-        border: 4px;
-        border-color: rgba(255, 230, 1, 0.844);
-        border-radius: 15px;
+    a{
+        text-decoration: none;
     }
     footer{
         position: relative;
