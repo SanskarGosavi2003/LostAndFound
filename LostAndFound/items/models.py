@@ -15,8 +15,14 @@ class item(models.Model):
     # whether the item is lost or found
     category = models.CharField(max_length=25)
 
+    def __str__(self):
+        return self.product_tag
+
 
 class User(models.Model):
     name = models.TextField(blank=True)
-    email=models.EmailField(blank=True)
-    password=models.TextField(blank=True)
+    email = models.EmailField(blank=True)
+    password = models.TextField(blank=True)
+
+    def __str__(self):
+        return self.name
