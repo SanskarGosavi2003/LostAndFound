@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import item
+from .models import item,User
 from .serializers import itemSerializer,UserSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -10,10 +10,21 @@ from rest_framework.response import Response
 def signup_view(request):
     serializer=UserSerializer(data=request.data)
     if serializer.is_valid():
-        print("hello")
         serializer.save()
         return Response("Signup Successful")
     return Response("Signup Failed. Try Again.")
+
+@api_view(['GET'])
+def login_view(request):
+    user=User.objects.filter(name=request.data['name'], password=request.data['password'])
+    #user= User.objects.filter(name=request.d["name"], password=request.data["password"])
+    #user=User.objects.all()
+    serializer=UserSerializer(user, many=True)
+
+    if user:
+        return Response("Login Successful")
+    else:
+        return Response("Login Failed. Try Again.")
 
 def item_list(request):
    
