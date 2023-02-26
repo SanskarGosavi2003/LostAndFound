@@ -16,8 +16,8 @@ def signup_view(request):
     return Response("Signup Failed. Try Again.")
 
 def item_list(request):
- 
-    items = item.objects.all()
+   
+    items = item.objects.filter(category="LOst")
     serializer = itemSerializer(items, many=True)
-    return HttpResponse(serializer.data, safe=False)
-  
+    item_lost = serializer.data
+    return Response({"lost_items":item_lost})
