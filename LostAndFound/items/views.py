@@ -1,13 +1,19 @@
 from django.shortcuts import render
-from django.http import JsonResponse
 from .models import item
-from .serializers import itemSerializer
+from .serializers import itemSerializer,UserSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-
 # Create your views here.
 
+@api_view(['POST'])
+def signup_view(request):
+    serializer=UserSerializer(data=request.data)
+    if serializer.is_valid():
+        print("hello")
+        serializer.save()
+        return Response("Signup Successful")
+    return Response("Signup Failed. Try Again.")
 
 @api_view(['GET'])
 def item_lost(request):
