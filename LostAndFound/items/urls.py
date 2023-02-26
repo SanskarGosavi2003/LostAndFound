@@ -5,4 +5,5 @@ urlpatterns = [
     path('lost/', views.item_lost),
     path('found/',views.items_found),
     path('signup/', views.signup_view),
+    path('user/',views.user_profile),
 ]

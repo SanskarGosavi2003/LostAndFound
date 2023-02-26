@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import item
+from .models import item,User
 from .serializers import itemSerializer,UserSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -30,3 +30,13 @@ def items_found(request):
     serializer = itemSerializer(items, many=True)
     item_found = serializer.data
     return Response({"found_items":item_found})
+
+
+@api_view(['GET'])
+def user_profile(requset):
+    user=User.objects.all()
+    user_serializer=UserSerializer(user,many=True)
+    user_profile=user_serializer.data
+    return Response({"User-Profile":user_profile})
+    
+    
