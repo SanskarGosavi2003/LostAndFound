@@ -6,6 +6,8 @@ from django.db import models
 class item(models.Model):
     # name or type of the product
     product_tag = models.CharField(max_length=15)
+    # description of the item lost or found
+    description = models.TextField()
     # place where lost or found
     place = models.TextField()
     # time when lost or found
@@ -20,12 +22,11 @@ class item(models.Model):
     def __str__(self):
         return self.product_tag
 
-
 class User(models.Model):
     name = models.TextField(blank=True)
     email = models.EmailField(blank=True)
     password = models.TextField(blank=True)
-
+    status = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
