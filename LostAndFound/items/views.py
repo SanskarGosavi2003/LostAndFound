@@ -15,20 +15,17 @@ def signup_view(request):
         return Response("Signup Successful")
     return Response("Signup Failed. Try Again.")
 
-@api_view(['GET'])
+@api_view(['PUT'])
 def login_view(request):
-    user=User.objects.filter(name=request.data['name'], password=request.data['password'])
-    #user= User.objects.filter(name=request.d["name"], password=request.data["password"])
-    #user=User.objects.all()
+    user=User.objects.get(name=request.data.get('name'), password=request.data.get('password'))
     serializer=UserSerializer(user, many=True)
-
     if user:
+        serializer.status=True
         return Response("Login Successful")
     else:
         return Response("Login Failed. Try Again.")
 
-def item_list(request):
-   
+def items_lost(request):
     items = item.objects.filter(category="lost")
     serializer = itemSerializer(items, many=True)
     item_lost = serializer.data
@@ -49,5 +46,11 @@ def user_profile(requset):
     user_serializer=UserSerializer(user,many=True)
     user_profile=user_serializer.data
     return Response({"User-Profile":user_profile})
-    
-    
+
+@api_view(['POST'])
+def add_items(request):
+    serializer=itemSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data)
+    return Response("Try Again.")
