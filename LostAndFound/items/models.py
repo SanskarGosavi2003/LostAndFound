@@ -24,5 +24,6 @@ class User(models.Model):
     email = models.EmailField(blank=True)
     password = models.TextField(blank=True)
 
+
     def __str__(self):
         return self.name
