@@ -1,0 +1,305 @@
+@media screen and (min-width: 913px){
+    *{
+        
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 15px;
+    }
+    h6{
+        position: absolute;
+        left: 60%;
+        color: rgb(220, 123, 25);
+        top:5%;
+        font-size: 300%;
+        
+    
+    }
+    body{
+        
+        background: linear-gradient(to top right, #6d03ee 0%, #FDD563 100%);
+        
+        margin: 0px;
+        padding: 0%;
+        height: 900px;
+    }
+    h2{
+        font-size: 0%;
+        width: 0%;
+    }
+        
+    img{
+        opacity: 0.9;
+      position: absolute;
+      right: 45%;
+      top: 6%;
+      bottom: 10%;
+      width: 50%;
+      
+      padding-bottom: 0%;
+      background-color: #FFE9FF;
+      
+      
+      padding-top: 0%;
+      border-radius: 40px;
+    }
+    .foot{
+        background-color: rgba(0, 0, 0, 0.01);
+    }
+    
+    body{
+        padding-bottom: 0px;
+    }
+    p{
+        display: inline;
+        color: #3a2466;
+        background-color: rgba(0, 0, 0, 0.01);
+        padding-left: 15%;
+        font-size: 70%;
+    }
+    form{
+        background-color: rgba(0, 0, 0, 0.01);
+        padding: 0px;
+        margin: 0%;
+        border: 0px;
+    }
+    
+    article{
+        overflow: hidden;
+        border-style: solid;
+        border-color: whitesmoke;
+        position: absolute;
+        left: 53%;
+        background-color: rgba(0, 0, 0, 0.5);
+        top:45%;
+        padding: 2%;
+        width: 36%;
+        height: min-content;
+        
+        
+        border-radius: 5px;
+    }
+    
+    
+    h1{
+        display: inline;
+        padding-left: 15%;
+    background-color: rgba(0, 0, 0, 0.01);
+    
+        color: #3a2466;
+        text-align: left;
+        font-size: 110%;
+    }
+    .em{
+        
+        position: absolute;
+        right: 41%;
+        top:58%;
+        width: 3%;
+    }
+    .pass{
+        position: absolute;
+        right: 41%;
+        top:67%;
+        width: 3%;
+    }
+    
+    span{
+        padding: 0px;
+        
+        font-size: 150%;
+      height: 100%;
+      
+      left: 50%;
+      margin-left: 0px;
+      top: 0;
+    }
+    div{
+        text-align: left;background-color: white;
+    }
+    .main{
+        color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        font-size: 145%;
+        background-color: #3a2466;
+    }
+    a{
+        text-decoration: none;
+        font-size: 110%;
+        background-color: rgba(0, 0, 0, 0.01);
+         
+    }
+    button{
+        display: inline;
+        
+    
+        width: 30%;
+        margin-left: auto;
+          margin-right: auto;
+          
+        background-color: #3a2466;
+        
+        padding: 1.5%;
+        border: 1px;
+        border-color: #3a2466;
+        
+        border-radius: 15px;
+    }
+    
+    input{
+        width: 100%;
+        display: inline;
+        font-size: 80%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 3px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    mat-form-field{
+        display: inline;
+        display: block;
+        margin-left: auto;
+          margin-right: auto;
+          padding-left: 0%;
+        padding-right: 7%;
+          height: px;
+          width: 60%;
+          background-color: #F3F3F3;
+    }
+    .form{
+        
+        border-color: rgba(255, 230, 1, 0.844);
+        padding: 0%;
+    }
+    .foot>a{
+        color: #6d03ee;
+    }
+    
+    footer{
+        display: inline;
+        text-align: right;
+        color: white;
+        padding-left: 5%;
+        padding-top: 5%;
+        font-size: 65%;
+      }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (max-width: 912px){
+        .em{
+            width: 0px;
+        }
+        h6{
+            font-size: 0px;
+            width: 0px;
+        }
+        .pass{
+            width: 0px;
+        }
+        h1{
+            font-size: 0%;
+        }
+        h2{
+            font-size: 300%;
+        }
+        h6{
+            font-size: 80%;
+        }
+        p{
+            font-size: 120%;
+            display: block;
+            text-align: left;
+            padding-left: 16%;
+        }
+        .main{
+            text-decoration: none;
+            font-size: 180%;
+            color: white;
+            background-color: yellow;
+            display: block;
+            position: relative;
+            top: 10px;
+            
+            margin-left: auto;
+              margin-right: auto;
+              width: 80%;
+              
+            background-color: rgba(255, 230, 1, 0.844);
+            padding: 4%;
+            padding-bottom: 10%;
+            border: 4px;
+            border-color: rgba(255, 230, 1, 0.844);
+            border-radius: 15px;
+        }
+        footer>a{
+            color: blue;
+            font-size: 100%;
+        }
+        body{
+            border-radius: 15px;
+            text-align: center;
+            
+      font-family: Arial, Helvetica, sans-serif;
+      
+        }
+    
+        .foot>a{
+            color: #6d03ee;
+        }
+        img{
+            height: 0px;
+            width: 0px;
+        }
+        input{
+            border: 1px;
+            border-color: black;
+            border-style: ridge;
+            height: 40px;
+              width: 100%;
+              padding: 0%;
+              border-radius: 8px;
+        }
+        mat-form-field{
+            display: block;
+            margin-left: auto;
+            
+              margin-right: auto;
+              height: 30%;
+              width: 70%;
+              background-color: whitesmoke;
+        }
+        a{
+            text-decoration: none;
+        }
+        footer{
+            position: relative;
+            top: 10px;
+            text-align-last: center;
+            padding: 4%;
+            padding-top: 10%;
+            font-size: 100%;
+          }
+          
+    }

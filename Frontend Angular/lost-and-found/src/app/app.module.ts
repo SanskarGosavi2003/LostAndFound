@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatRippleModule } from '@angular/material/core';
@@ -44,7 +44,7 @@ import { LoginComponent } from './login/login.component';
     NavbarComponent,
     PreviousLostComponent,
     PreviousLostCardComponent,
-    LoginComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +58,10 @@ import { LoginComponent } from './login/login.component';
     HttpClientModule,
     MatDialogModule,
     MatSlideToggleModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
