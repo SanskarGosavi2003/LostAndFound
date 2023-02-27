@@ -31,7 +31,8 @@ import { RequestssearchComponent } from './requestssearch/requestssearch.compone
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [
     LoginService
