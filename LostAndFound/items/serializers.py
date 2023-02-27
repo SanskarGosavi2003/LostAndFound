@@ -10,4 +10,9 @@ class itemSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('name','email')
+        fields='__all__'
+
+class NewSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('name','email','id')       

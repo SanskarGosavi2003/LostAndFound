@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import item,User
-from .serializers import itemSerializer,UserSerializer
+from .serializers import itemSerializer,UserSerializer,NewSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -33,10 +33,13 @@ def items_found(request):
 
 
 @api_view(['GET'])
-def user_profile(requset):
-    user=User.objects.all()
-    
-    user_serializer=UserSerializer(user,many=True)
+def user_profile(request):
+    serializer=NewSerializer(data= request.data)
+    if serializer.is_valid():
+        serializer.save()
+    s=serializer.data
+    user=User.objects.get(id=s.get('id'))
+    user_serializer=NewSerializer(user)
     user_profile=user_serializer.data
     return Response({"User-Profile":user_profile})
     

@@ -12,6 +12,8 @@ class item(models.Model):
     time = models.DateTimeField()
     # description of the item lost or found
     description = models.TextField()
+    #image of the item
+    image_url=models.TimeField(blank=True,null=True)
     # whether the item is lost or found
     category = models.CharField(max_length=25)
 
