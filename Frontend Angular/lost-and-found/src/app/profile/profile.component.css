@@ -1,0 +1,205 @@
+@media screen and (max-width: 912px){
+
+a.back{
+    font-family: monospace;
+    color: black;
+    text-decoration: none;
+    font-size: 400%;
+}
+
+.pic>img{
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: gray;
+    padding: 2px;
+}
+
+article.phn>div.phone>p.in{
+    position: relative;
+    
+    font-size: 135%;
+}
+
+article.phn>div.mail>p.in{
+    position: relative;
+    
+    font-size: 135%;
+}
+
+article.phn>div.twitter>p.in{
+    position: relative;
+    
+    font-size: 135%;
+}
+
+p{
+    text-align: center;
+    font-size: 130%;
+}
+
+article.phn{
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.13), 0 1px 4px rgba(0, 0, 0, 0.24);
+    display: block;
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px;
+    border-style: groove;
+    width: 90%;
+    border-radius: 5%;
+}
+
+article.phn>div{
+    border: 0px;
+    padding: 1.5%;
+    border-bottom: 1px;
+    border-style: groove;
+}
+
+article.phn>div>p.in{
+    display: inline;
+    position: relative;
+    bottom: 7px;
+    
+    
+    border-style: none;
+    padding-left: 10%;
+    font-size: 120%;
+}
+
+
+article.phn>div>img{
+    padding-top: 0%;
+    padding-left: 3%;
+    padding-bottom: 0%;
+    width: 10%;
+    border-radius: 50%;
+}
+
+.twitter>img{
+    border-bottom: 0px;
+}
+
+article.phn>div>img.edit{
+    width: 0%;
+    padding-left: 5%;
+}
+
+.log{
+    
+    width: 30%;
+    background-color: rgba(200, 68, 224, 0.677);
+    color: white;
+    border-color: rgba(200, 68, 224, 0.677);
+    position: relative;
+    padding: 3.5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 1.7cm;
+    border-radius: 10px;
+}
+
+#logout{
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 140%;
+}
+
+#name{
+    font-size: 200%;
+    position: relative;
+    bottom: 0.7cm;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 913px){
+
+    body{
+    
+        background: linear-gradient(to top right, #6d03ee 0%, #FDD563 100%);
+        
+        margin: 0px;
+        padding: 0%;
+        height: 900px;
+    }    
+
+.back{
+    width: 0%;
+    font-size: 0%;
+}
+
+.all{
+    width: 50%;
+    position: absolute;
+    display: flex;
+    gap: 5%;
+    border-style: solid;
+    overflow: auto;
+    background-color: #341e60;
+    top: 28%;
+    left: 10%;
+}
+
+.pic{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.pic>img{
+    width: 146%;
+    border-radius: 50%;
+    padding-left: 15%;
+}
+
+.phn>div>img{
+    width: 0%;
+    display: inline;
+}
+
+p{
+    position: relative;
+    padding-left: 18%;
+    color: #FBD2FF;
+    display: inline;
+    font-size: 200%;
+}
+
+button{
+    background-color: #54309E;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 2%;
+    position: relative;
+    right: 7%;
+}
+
+button>a{
+    color: white;
+    text-decoration: none;
+    font-size: 130%;
+}
+
+}
