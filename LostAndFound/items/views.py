@@ -35,6 +35,7 @@ def items_found(request):
 @api_view(['GET'])
 def user_profile(requset):
     user=User.objects.all()
+    
     user_serializer=UserSerializer(user,many=True)
     user_profile=user_serializer.data
     return Response({"User-Profile":user_profile})
