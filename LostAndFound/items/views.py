@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .models import item,User
-from .serializers import itemSerializer,UserSerializer
+from .models import item,User
+from .models import item,User
+from .serializers import itemSerializer,UserSerializer,NewSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -10,14 +12,21 @@ from rest_framework.response import Response
 def signup_view(request):
     serializer=UserSerializer(data=request.data)
     if serializer.is_valid():
-        print("hello")
         serializer.save()
         return Response("Signup Successful")
     return Response("Signup Failed. Try Again.")
 
-@api_view(['GET'])
-def item_lost(request):
-   
+@api_view(['PUT'])
+def login_view(request):
+    user=User.objects.get(name=request.data.get('name'), password=request.data.get('password'))
+    serializer=UserSerializer(user, many=True)
+    if user:
+        serializer.status=True
+        return Response("Login Successful")
+    else:
+        return Response("Login Failed. Try Again.")
+
+def items_lost(request):
     items = item.objects.filter(category="lost")
     serializer = itemSerializer(items, many=True)
     item_lost = serializer.data
@@ -33,10 +42,20 @@ def items_found(request):
 
 
 @api_view(['GET'])
-def user_profile(requset):
-    user=User.objects.all()
-    user_serializer=UserSerializer(user,many=True)
+def user_profile(request):
+    serializer=NewSerializer(data= request.data)
+    if serializer.is_valid():
+        serializer.save()
+    s=serializer.data
+    user=User.objects.get(id=s.get('id'))
+    user_serializer=NewSerializer(user)
     user_profile=user_serializer.data
     return Response({"User-Profile":user_profile})
-    
-    
+
+@api_view(['POST'])
+def add_items(request):
+    serializer=itemSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data)
+    return Response("Try Again.")
