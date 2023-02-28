@@ -26,7 +26,7 @@ class User(models.Model):
     name = models.TextField(blank=True)
     email = models.EmailField(blank=True)
     password = models.TextField(blank=True)
-    status = models.BooleanField(default=False)
+    status = models.BooleanField(default=True, blank=True)
 
     def __str__(self):
         return self.name
