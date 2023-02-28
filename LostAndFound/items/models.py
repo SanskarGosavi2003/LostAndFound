@@ -23,7 +23,7 @@ class item(models.Model):
         return self.product_tag
 
 class User(models.Model):
-    name = models.TextField(blank=True)
+    name = models.TextField(blank=True, unique=True)
     email = models.EmailField(blank=True)
     password = models.TextField(blank=True)
     status = models.BooleanField(default=True, blank=True)

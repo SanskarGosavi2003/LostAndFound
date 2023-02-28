@@ -19,11 +19,12 @@ def signup_view(request):
 @api_view(['PUT'])
 def login_view(request):
     user=User.objects.get(name=request.data.get('name'), password=request.data.get('password'))
-    serializer=UserSerializer(user, many=True)
+    # serializer=UserSerializer(user, many=True)
     if user:
-        serializer.data.status=True
-        return Response(serializer.data.status)
-        #return Response("Login Successful.")
+        user.status = True
+        user.save(update_fields=['status'])
+        # return Response(serializer.data)
+        return Response("Login Successful.")
     else:
         return Response("Login Failed. Try Again.")
 
@@ -43,16 +44,19 @@ def items_found(request):
     return Response({"found_items":item_found})
 
 
-@api_view(['GET'])
+@api_view(['PUT'])
 def user_profile(request):
-    serializer=NewSerializer(data= request.data)
-    if serializer.is_valid():
-        serializer.save()
-    s=serializer.data
-    user=User.objects.get(id=s.get('id'))
-    user_serializer=NewSerializer(user)
-    user_profile=user_serializer.data
-    return Response({"User-Profile":user_profile})
+    user=User.objects.get(name=request.data.get('name'))
+    if user:
+        print(user, "user")
+        user_serializer=NewSerializer(user)
+        # print(user_serializer,"user serializer")
+        user_profile=user_serializer.data
+        print(user_profile,"user profile")
+        return Response({"User-Profile":user_profile})
+    return Response("sorry rahega")
+    
+    
 
 @api_view(['POST'])
 def add_items(request):
