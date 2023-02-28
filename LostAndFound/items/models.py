@@ -11,7 +11,7 @@ class item(models.Model):
     # place where lost or found
     place = models.TextField()
     # time when lost or found
-    time = models.DateTimeField()
+    time = models.DateTimeField(blank=True, null=True)
     # description of the item lost or found
     description = models.TextField()
     #image of the item
