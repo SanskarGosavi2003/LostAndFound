@@ -5,15 +5,19 @@
 }
 
 body {
-
-
-    background: linear-gradient(to top right, #6d03ee 0%, #FDD563 100%);
-
+    background-color: #221244;
+    overflow: hidden;
     margin: 0px;
     padding: 0%;
-    height: 900px;
+    height: fit-content;
 }
 
+
+
+h1 {
+    color: #fbd2ff;
+    font: size 32px;
+}
 
 
 
@@ -25,17 +29,24 @@ body {
     max-width: 100%;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: 5%;
+    margin-left: 10%;
+
 
 }
+
 
 
 .container-2 {
 
     margin-left: 10%;
     margin-top: 50px;
+    display: flex;
+    flex-direction: row;
 
+}
 
+.container-2>app-switch {
+    margin-left: 60%;
 }
 
 .flex-container-2 {

@@ -1,8 +1,9 @@
 button {
     margin-left: 5px;
     border-radius: 2px;
-    color: linear-gradient(#8E5ACC 0%, #B005AA 100%);
+    background: linear-gradient(259.31deg, #fff, rgba(255, 255, 255, 0.75) 0.01%, rgba(255, 255, 255, 0.75));
     background-color: grey;
+    margin-top: 2px;
 }
 
 button:checked {

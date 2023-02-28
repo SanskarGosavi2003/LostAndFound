@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-previous-lost-card',
-  templateUrl: './previous-lost-card.component.html',
-  styleUrls: ['./previous-lost-card.component.css']
+  selector: 'app-previous-found-card',
+  templateUrl: './previous-found-card.component.html',
+  styleUrls: ['./previous-found-card.component.css']
 })
-export class PreviousLostCardComponent {
+export class PreviousFoundCardComponent {
 
-  public lostcardList: any;
+  public foundcardList: any;
 
   constructor(private http: HttpClient) { }
 
@@ -22,11 +22,12 @@ export class PreviousLostCardComponent {
     this.http.get('https://jsonplaceholder.typicode.com/posts/').subscribe((response) => {
 
 
-      this.lostcardList = response;
-      console.log(this.lostcardList)
+      this.foundcardList = response;
+      console.log(this.foundcardList)
     })
 
   }
 
 
 }
+

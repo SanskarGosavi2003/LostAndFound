@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Inject } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +17,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { PreviousLostComponent } from './previous-lost/previous-lost.component';
 import { PreviousLostCardComponent } from './previous-lost-card/previous-lost-card.component';
+import { PreviousFoundComponent } from './previous-found/previous-found.component';
+import { PreviousFoundCardComponent } from './previous-found-card/previous-found-card.component';
+import { SwitchModule } from '@syncfusion/ej2-angular-buttons';
+import { SwitchComponent } from './switch/switch.component';
 
 
 
@@ -31,6 +35,9 @@ import { PreviousLostCardComponent } from './previous-lost-card/previous-lost-ca
     NavbarComponent,
     PreviousLostComponent,
     PreviousLostCardComponent,
+    PreviousFoundComponent,
+    PreviousFoundCardComponent,
+    SwitchComponent,
 
 
 
@@ -47,6 +54,8 @@ import { PreviousLostCardComponent } from './previous-lost-card/previous-lost-ca
     HttpClientModule,
     MatDialogModule,
     MatSlideToggleModule,
+    SwitchModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,14 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PreviousLostComponent } from './previous-lost/previous-lost.component';
+import { CardComponent } from './card/card.component';
+import { PreviousFoundCardComponent } from './previous-found-card/previous-found-card.component';
+import { PreviousLostCardComponent } from './previous-lost-card/previous-lost-card.component';
+
 
 const routes: Routes = [
-  { path: "previousLost", component: PreviousLostComponent }
+  { path: "", component: CardComponent },
+  { path: "previousLostCard", component: PreviousLostCardComponent },
+  { path: "previousFoundCard", component: PreviousFoundCardComponent }
 ];
 
 @NgModule({

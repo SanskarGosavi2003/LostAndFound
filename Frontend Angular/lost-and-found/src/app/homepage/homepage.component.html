@@ -9,19 +9,21 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <div>
         <app-navbar></app-navbar>
     </div>
 
     <div class="container-2">
         <h1>Lost and Found Items</h1>
+        <app-switch></app-switch>
     </div>
     <div class="flex-container-2">
         <app-search-tab></app-search-tab>
     </div>
     <div class="flex-container">
-        <app-card></app-card>
+        <router-outlet></router-outlet>
     </div>
+
 </body>
 
 </html>
