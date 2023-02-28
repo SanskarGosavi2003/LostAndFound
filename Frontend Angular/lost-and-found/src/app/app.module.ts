@@ -3,6 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatRippleModule } from '@angular/material/core';
+import { ProfileComponent } from './profile/profile.component';
+import { SignupComponent } from './signup/signup.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RequestssearchComponent } from './requestssearch/requestssearch.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
@@ -17,6 +26,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { PreviousLostComponent } from './previous-lost/previous-lost.component';
 import { PreviousLostCardComponent } from './previous-lost-card/previous-lost-card.component';
+import { LoginComponent } from './login/login.component';
 import { PreviousFoundComponent } from './previous-found/previous-found.component';
 import { PreviousFoundCardComponent } from './previous-found-card/previous-found-card.component';
 import { SwitchModule } from '@syncfusion/ej2-angular-buttons';
@@ -28,6 +38,9 @@ import { SwitchComponent } from './switch/switch.component';
 @NgModule({
   declarations: [
     AppComponent,
+    ProfileComponent,
+    SignupComponent,
+    RequestssearchComponent,
     HomepageComponent,
     CardComponent,
     PopupComponent,
@@ -38,15 +51,13 @@ import { SwitchComponent } from './switch/switch.component';
     PreviousFoundComponent,
     PreviousFoundCardComponent,
     SwitchComponent,
-
-
-
-
-
+    LoginComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
+    FormsModule,
     MatToolbarModule,
     MatCardModule,
     MatButtonModule,
@@ -56,6 +67,10 @@ import { SwitchComponent } from './switch/switch.component';
     MatSlideToggleModule,
     SwitchModule,
     MatSlideToggleModule
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

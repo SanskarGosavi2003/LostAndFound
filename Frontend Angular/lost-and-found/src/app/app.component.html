@@ -1,3 +1,6 @@
 <app-homepage></app-homepage>
 <!--<app-previous-found></app-previous-found>
 <app-previous-lost></app-previous-lost>-->
+<main [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+</main>
