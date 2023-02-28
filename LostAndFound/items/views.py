@@ -26,6 +26,7 @@ def login_view(request):
     else:
         return Response("Login Failed. Try Again.")
 
+@api_view(['GET'])
 def items_lost(request):
     items = item.objects.filter(category="lost")
     serializer = itemSerializer(items, many=True)
