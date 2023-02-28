@@ -21,8 +21,9 @@ def login_view(request):
     user=User.objects.get(name=request.data.get('name'), password=request.data.get('password'))
     serializer=UserSerializer(user, many=True)
     if user:
-        serializer.status=True
-        return Response("Login Successful")
+        serializer.data.status=True
+        return Response(serializer.data.status)
+        #return Response("Login Successful.")
     else:
         return Response("Login Failed. Try Again.")
 
@@ -59,3 +60,30 @@ def add_items(request):
         serializer.save()
         return Response(serializer.data)
     return Response("Try Again.")
+
+@api_view(['PUT'])
+def logout_view(request):
+    user=User.objects.get(id=request.data.get('id'))
+    serializer=UserSerializer(user)
+    s=serializer.data.get('status')
+    if user:
+        #s=False
+        #return Response("Logout Successful.")
+        return Response(s)
+    else:
+        return Response("Logout Failed.")
+        
+# def logout_view(request):
+    #serializer=UserSerializer(data=request.data)
+    #if serializer.is_valid():
+        #serializer.save()
+    #user=User.objects.get(id=serializer.data.get('id'))
+    #user_serializer=UserSerializer(user)
+    #if user and user_serializer.status==True:
+        #user_serializer.status=False
+        #return("Logout Successful.")
+    #else:
+        #return("Logout Failed.")
+    
+
+    
