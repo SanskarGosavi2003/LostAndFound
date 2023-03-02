@@ -1,93 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
 
-    
-    <div >
-    
-        <a class="back" routerLink="home">&#60;</a>
-    
-    </div>
 
-    <p id="ns">Request search.</p>
+  <div>
+
+    <a class="back" routerLink="home">&#60;</a>
+
+  </div>
+  <div>
+    <app-navbar></app-navbar>
+  </div>
+  <p id="ns">Request search.</p>
 
   <article class="all">
 
 
-<p id="search">Request search.</p>
+    <p id="search">Request search.</p>
 
-    
-    <article >
 
-        
+    <article>
 
-        <form [formGroup]="myForm">
-            <p> Title</p>
 
-            <mat-form-field>
-            <input matInput formControlName="title" type="text">
-          </mat-form-field>
-       
-          <p>  Description</p>
-          <mat-form-field class="des">
+
+      <form [formGroup]="myForm">
+        <p> Title</p>
+
+        <mat-form-field>
+          <input matInput formControlName="title" type="text">
+        </mat-form-field>
+
+        <p> Description</p>
+        <mat-form-field class="des">
           <input class="des" matInput formControlName="description" type="text">
-      </mat-form-field>
-      
-      <p> Location</p>
-      <mat-form-field>
-        <input matInput formControlName="location" type="text">
-      </mat-form-field>
+        </mat-form-field>
 
-      <br>
+        <p> Location</p>
+        <mat-form-field>
+          <input matInput formControlName="location" type="text">
+        </mat-form-field>
 
-      <span id="dd">
+        <br>
 
-        <button id="lol">
-           <h6> Date and time when lost : </h6>
-      <input id="time" class="down" type="datetime-local" formControlName="dnt">
-      </button>
-      
-      <select class="down" formControlName="cat" name="cat" id="down">
-        <option value="">Select category</option>
-        <option value="audio">Audio device</option>
-        <option value="laptop">Laptop</option>
-        <option value="bottle">Bottle</option>
-      </select>
+        <span id="dd">
 
-      <button class="down">
-      <input id="image" type="file" (change)="onFileSelected($event)">
-      <label for="image">Upload an image</label> 
-      </button>
+          <button id="lol">
+            <h6> Date and time when lost : </h6>
+            <input id="time" class="down" type="datetime-local" formControlName="dnt">
+          </button>
 
-      </span>
+          <select class="down" formControlName="cat" name="cat" id="down">
+            <option value="">Select category</option>
+            <option value="Mobile">Mobile</option>
+            <option value="laptop accesories">Laptop Accesories</option>
+            <option value="bottle">Bottle</option>
+            <option value="Headphones">Headphones</option>
+            <option value="Bag">Bag</option>
+            <option value="Miscellaneous">Miscellaneous</option>
 
-      <br>
-      <br>
-      
-             <input class="main" type="submit">
-      
-     
-  </form>
-    
+          </select>
+
+          <button class="down">
+            <input id="image" type="file" (change)="onFileSelected($event)">
+            <label for="image">Upload an image</label>
+          </button>
+
+        </span>
+
+        <br>
+        <br>
+        <a routerLink="/home" routerLinkActive="active">
+          <input class="main" type="submit">
+        </a>
+
+
+      </form>
+
 
     </article>
 
 
 
 
-    
 
-    
+
+
 
   </article>
 
 
 
 </body>
+
 </html>

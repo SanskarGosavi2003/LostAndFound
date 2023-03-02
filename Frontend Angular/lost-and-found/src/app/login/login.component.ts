@@ -8,16 +8,16 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  
-    @Input() myForm:FormGroup;
-  
-    constructor(services: LoginService) { 
-      this.myForm=services.sp();
-      this.myForm.valueChanges.subscribe(console.log);
-    }
-  
-    ngOnInit() {
-      
-      }
-      
-    }
+
+  @Input() myForm: FormGroup;
+
+  constructor(services: LoginService) {
+    this.myForm = services.sp();
+    this.myForm.valueChanges.subscribe(console.log);
+  }
+
+  ngOnInit() {
+
+  }
+
+}

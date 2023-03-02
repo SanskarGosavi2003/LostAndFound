@@ -17,7 +17,7 @@ mat-card:hover {
 }
 
 mat-card-title {
-    font-size: 1.5vw;
+    font-size: 1.0vw;
     font-weight: 100;
     color: #fff;
 }
@@ -30,8 +30,7 @@ mat-card-content {
 
 mat-card-actions {
     display: flex;
-    justify-content: center;
-
+    margin-bottom: 0px;
 }
 
 mat-card-actions button {
@@ -45,6 +44,7 @@ mat-card-actions button {
     transition: background-color 0.3s ease;
     background-color: rgba(72, 43, 147, 0.5);
     opacity: 0.8;
+    margin-right: 40px;
 
 }
 

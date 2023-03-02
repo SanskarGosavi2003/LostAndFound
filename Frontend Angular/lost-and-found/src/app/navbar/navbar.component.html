@@ -1,26 +1,3 @@
-<!--<nav>
-    <div class="logo">
-        <p>RecoverMate</p>
-    </div>
-    <div class="nav-left">
-        <ul>
-            <li><a (click)="redirectToPreviousFoundPage()">Previous Found</a></li>
-            <li><a (click)="redirectToPreviousLostPage()">Previous Lost</a></li>
-            <li><a (click)="redirectToAddFoundPage()">Add Found</a></li>
-            <li><a (click)="redirectToRequestSearchPage()">Request Search</a></li>
-        </ul>
-    </div>
-    <div class="nav-right">
-        <form class="search-form">
-            <input type="text" placeholder="Search">
-            <button type="submit"><i class="fa fa-search">Search</i></button>
-        </form>
-        <div class="profile-photo">
-            <img src="path/to/profile-photo.jpg" alt="Profile Photo">
-        </div>
-    </div>
-</nav>-->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +13,9 @@
 <body>
     <nav class="navbar navbar-expand-lg  navbar-transparent  sticky-top">
         <div class="logo">
-            <p>RecoverMate</p>
+            <a routerLink="/home" routerLinkActive="active">
+                <p>RecoverMate</p>
+            </a>
         </div>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -45,20 +24,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                <li routerLink="/previousFoundCard" routerLinkActive="active">Previous Found</li>
-                <li routerLink="/previousLostCard" routerLinkActive="active">Previous Lost</li>
+                <li routerLink="/card" routerLinkActive="active">Found Items </li>
+                <li routerLink="/home" routerLinkActive="active">Lost Items</li>
                 <li routerLink="/" routerLinkActive="active">Add Found</li>
-                <li routerLink="/" routerLinkActive="active">Request Search</li>
+                <li routerLink="/req" routerLinkActive="active">Request Search</li>
 
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="text" id="newsQuery" placeholder="Search" aria-label="Search">
-                <button class="btn" type="submit" id="searchBtn">Search</button>
-            </form>
 
-            <div class="profile-photo">
+        </div>
+        <form class="d-flex">
+            <input class="form-control me-2" type="text" id="newsQuery" placeholder="Search" aria-label="Search">
+            <!--<button class="btn" type="submit" id="searchBtn">Search</button>-->
+        </form>
+        <div class="profile-photo">
+            <a routerLink="/profile" routerLinkActive="active">
                 <img src="path/to/profile-photo.jpg" alt="Profile Photo">
-            </div>
+            </a>
         </div>
 
     </nav>

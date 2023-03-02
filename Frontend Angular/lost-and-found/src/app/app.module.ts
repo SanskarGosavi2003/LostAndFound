@@ -66,7 +66,7 @@ import { SwitchComponent } from './switch/switch.component';
     MatDialogModule,
     MatSlideToggleModule,
     SwitchModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,

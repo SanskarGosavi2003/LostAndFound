@@ -1,16 +1,16 @@
-<div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="16px ">
+<div @fade fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="16px ">
 
 
-    <mat-card (click)="openDialog()" fxFlex=" 0 1 calc(25% - 16px)" class="mat-elevation-z4"
-        *ngFor="let card of cardList">
+    <mat-card fxFlex=" 0 1 calc(25% - 16px)" class="mat-elevation-z4" *ngFor="let card of cardList">
         <img mat-card-image src="https://via.placeholder.com/350x150" alt="Card Image">
         <mat-card-content>
             <mat-card-title>{{card.title}}</mat-card-title>
-            <p>{{card.body}}</p>
+            <p>Date</p>
         </mat-card-content>
         <mat-card-actions>
+            <button mat-raised-button (click)="openDialog()">Read</button>
             <button mat-raised-button>Claim</button>
-
         </mat-card-actions>
+
     </mat-card>
 </div>

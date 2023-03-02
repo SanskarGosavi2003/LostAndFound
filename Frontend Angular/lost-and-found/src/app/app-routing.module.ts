@@ -18,7 +18,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 
 const routes: Routes = [
 
-  { path: "", component: CardComponent },
+  { path: "card", component: CardComponent },
   { path: "previousLostCard", component: PreviousLostCardComponent },
   { path: "previousFoundCard", component: PreviousFoundCardComponent },
 

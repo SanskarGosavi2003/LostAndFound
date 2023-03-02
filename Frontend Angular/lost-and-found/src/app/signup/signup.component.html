@@ -1,69 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 </head>
+
 <body>
-    
-   
-    
-        <span class="form">
-        
-            <img src="https://i.pinimg.com/736x/99/70/4d/99704d703ef20fbd630fd5f670101b11.jpg" alt="">
-
-            <article>
-    
-            
-             <h1>Hello,</h1>
-             <h2>Sign up.</h2>
-    
-    
-<form [formGroup]="myForm">
-    
-          <p> Name</p>
-          <mat-form-field>
-          <input matInput formControlName="name" type="name">
-        </mat-form-field>
-    
-        <p>  Email</p>
-        <mat-form-field>
-        <input matInput formControlName="email" type="email">
-    </mat-form-field>
-
-    <p> Password</p>
-          <mat-form-field>
-          <input matInput formControlName="password" type="password">
-        </mat-form-field>
-
-        
-     
-    <br>
-    <a routerLink="home">
-        <input class="main" type="submit" value="Sign Up">
-     </a>
-
-    <footer class="foot">Already have an account? <a routerLink="">Log In</a> </footer>
-</form>
 
 
-</article>
+
+    <span class="form">
+
+        <img src="https://i.pinimg.com/736x/99/70/4d/99704d703ef20fbd630fd5f670101b11.jpg" alt="">
+
+        <article>
+
+
+            <h1>Create an Account</h1>
+
+
+            <form [formGroup]="myForm">
+
+                <p> Name</p>
+                <mat-form-field>
+                    <input matInput formControlName="name" type="name">
+                </mat-form-field>
+
+                <p> Email</p>
+                <mat-form-field>
+                    <input matInput formControlName="email" type="email">
+                </mat-form-field>
+
+                <p> Password</p>
+                <mat-form-field>
+                    <input matInput formControlName="password" type="password">
+                </mat-form-field>
+
+
+
+                <br>
+                <a routerLink="/home">
+                    <input class="main" type="submit" value="Sign Up">
+                </a>
+
+                <footer class="foot">Already have an account? <a routerLink="">Log In</a> </footer>
+            </form>
+
+
+        </article>
     </span>
-   
-    
-    <footer>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-    </footer>
-    <header><img class="em" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnAUN9kLNfIWm0s5OVAzz-NxFMAy56fXxX_A&usqp=CAU" alt="">
 
-</header>
-<h6>RecoverMate</h6>
-<header>
 
-    <img class="pass" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX/////7gD/+9X/8ln/96D///r/8DT//N3//Nj/+sb/9pT/96b/+87/827/8Dj/9IL//ev/8Ur/+LP/8mP//vX/+bz/7yj/7xj/9YX/8l3/9Y3/83L/9pb/9H3/+K3//eT/8Uz2KHMuAAAEFElEQVR4nO2b2XbiMAxASwMEaEnZt1Lo/3/lkOkwXbAcJ0hRes69z63lm8WS5fDw0Aar0bq/m2bFtleyLbLprr8erVqJbc5gPNn3JLLJ+JdrPh+Got2V4eHZe5pNGb9W2l2Zjr0nW598l6z3wUvuPeVarIuafiXF2nvayTw10PvgyXvqSTT3+x2O67v8Srr9rOZN3r+fFB1ec94U/ErevEUEnpX8SjpZBLwoCl7So7fODbPq8qwem5m30nfGyn4lnarkJgaCvd7EW+uTqYngpSD3FrsyNxLs9ebean8ZaK8xXxkOvPUughtDwcuS6q5oLNgBRctH9IOhr2CdRWY7n+4Ox/7xsJvOtzX+z3W5SU0Tm7dF/uNpyxcvqQ+4Y9JIS/T7hVSAzRbLpBHcUn9KqVac4ivF4JSypXQq4GbVM1s+JowzSriRPmV45Wu0PCeOdK503JiaCFQ1RItRjcFGVc/qzsxDpGpHf6o53qlivPZ3/fH5zOsfuKwqcquBQ5R406nfaMx+dMyW+xp5dDJNn6j4k99ukzG2MGybL+2zWDVXKM6/klhn+64tXXSz2WY33PBKx54OlbknETl8uX+vE7mL7R3byHPY3r9fHUTeRYW5JxG5hRr1Y6TebesmyjPQKTwiSUNl/ErkhbRZor9FTv3tLKdidaXXbmghRAS5nNH7+GclxmijsBFP0eruJmKIO402qlMptm5RJSZ+1ShBxOZMnQ1vNSMpjH3LRmogLpXjSI2NV+U4t0jXNrUnk8pZCqQc5wYpG2vfQvkmWrczDkJc3bewRHoTD+qRviNU/hbHJy2G+oKUijVz4RUpJ9p+VSzlCouo0tW0zRfCWczeJJjwfbjtOU0WDrowCbYIB8tMgl0RHhybgxNhK7w1CfYP4dWwOjcRzn4sl5rHcEirryWFxnrKkV1ThDfD5jVsPVyJ0F6w2pYKm22tZkkI4TciVp+8DMLhLD8hDlfDdotbuHWqX+V/Et5527WHwh0pyyOa8DW125SG3wrLhBgMaNgdErpeZvEkQ7sdm7AbNYsnGR7N4h07YmiXn4T8axYPQ30w1AdDbTDUB0NtMNQHQ20w1AdDbTDUB0NtMNQHQ20w1AdDbTDUB0NtMNQHQ20w1AdDbbpiaPeLMuFXcspR8vfsP+GAxT6zYS/8ruTzL941PscSvtbrCBpf8WHoC4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoT7XhH1fjdpRYpMvVAAAAAElFTkSuQmCC" alt=""></header>
-<img class="mail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8-LaKoUY6shd25T5gPYtvpDrYJXkCxQxmhZc9fsIjrmH57PUWxkqZlfSR1DsuWIdlG4w&usqp=CAU" alt="">
+    <header><img class="em"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnAUN9kLNfIWm0s5OVAzz-NxFMAy56fXxX_A&usqp=CAU"
+            alt="">
+
+    </header>
+    <h6>RecoverMate</h6>
+    <header>
+
+        <img class="pass"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX/////7gD/+9X/8ln/96D///r/8DT//N3//Nj/+sb/9pT/96b/+87/827/8Dj/9IL//ev/8Ur/+LP/8mP//vX/+bz/7yj/7xj/9YX/8l3/9Y3/83L/9pb/9H3/+K3//eT/8Uz2KHMuAAAEFElEQVR4nO2b2XbiMAxASwMEaEnZt1Lo/3/lkOkwXbAcJ0hRes69z63lm8WS5fDw0Aar0bq/m2bFtleyLbLprr8erVqJbc5gPNn3JLLJ+JdrPh+Got2V4eHZe5pNGb9W2l2Zjr0nW598l6z3wUvuPeVarIuafiXF2nvayTw10PvgyXvqSTT3+x2O67v8Srr9rOZN3r+fFB1ec94U/ErevEUEnpX8SjpZBLwoCl7So7fODbPq8qwem5m30nfGyn4lnarkJgaCvd7EW+uTqYngpSD3FrsyNxLs9ebean8ZaK8xXxkOvPUughtDwcuS6q5oLNgBRctH9IOhr2CdRWY7n+4Ox/7xsJvOtzX+z3W5SU0Tm7dF/uNpyxcvqQ+4Y9JIS/T7hVSAzRbLpBHcUn9KqVac4ivF4JSypXQq4GbVM1s+JowzSriRPmV45Wu0PCeOdK503JiaCFQ1RItRjcFGVc/qzsxDpGpHf6o53qlivPZ3/fH5zOsfuKwqcquBQ5R406nfaMx+dMyW+xp5dDJNn6j4k99ukzG2MGybL+2zWDVXKM6/klhn+64tXXSz2WY33PBKx54OlbknETl8uX+vE7mL7R3byHPY3r9fHUTeRYW5JxG5hRr1Y6TebesmyjPQKTwiSUNl/ErkhbRZor9FTv3tLKdidaXXbmghRAS5nNH7+GclxmijsBFP0eruJmKIO402qlMptm5RJSZ+1ShBxOZMnQ1vNSMpjH3LRmogLpXjSI2NV+U4t0jXNrUnk8pZCqQc5wYpG2vfQvkmWrczDkJc3bewRHoTD+qRviNU/hbHJy2G+oKUijVz4RUpJ9p+VSzlCouo0tW0zRfCWczeJJjwfbjtOU0WDrowCbYIB8tMgl0RHhybgxNhK7w1CfYP4dWwOjcRzn4sl5rHcEirryWFxnrKkV1ThDfD5jVsPVyJ0F6w2pYKm22tZkkI4TciVp+8DMLhLD8hDlfDdotbuHWqX+V/Et5527WHwh0pyyOa8DW125SG3wrLhBgMaNgdErpeZvEkQ7sdm7AbNYsnGR7N4h07YmiXn4T8axYPQ30w1AdDbTDUB0NtMNQHQ20w1AdDbTDUB0NtMNQHQ20w1AdDbTDUB0NtMNQHQ20w1AdDbbpiaPeLMuFXcspR8vfsP+GAxT6zYS/8ruTzL941PscSvtbrCBpf8WHoC4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoD4YYYugPhhhi6A+GGGLoT7XhH1fjdpRYpMvVAAAAAElFTkSuQmCC"
+            alt="">
+    </header>
+    <img class="mail"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8-LaKoUY6shd25T5gPYtvpDrYJXkCxQxmhZc9fsIjrmH57PUWxkqZlfSR1DsuWIdlG4w&usqp=CAU"
+        alt="">
 
 </body>
+
 </html>

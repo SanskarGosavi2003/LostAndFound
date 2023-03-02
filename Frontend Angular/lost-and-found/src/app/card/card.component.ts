@@ -2,13 +2,21 @@
 
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { PopupComponent } from '../popup/popup.component';
+import { animate, state, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css']
+  styleUrls: ['./card.component.css'],
+  animations: [
+    trigger('fade', [
+      transition('void => *', [
+        animate(5000)
+      ])
+    ])
+  ]
 })
 export class CardComponent implements OnInit {
 
@@ -22,7 +30,13 @@ export class CardComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialogRef.open(PopupComponent, { width: '23%', height: 'fit-content', enterAnimationDuration: '1000ms', exitAnimationDuration: '1000ms', panelClass: 'my-dialog' })
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.width = '60%'; // set the width
+    dialogConfig.height = '505'; // set the height
+    dialogConfig.maxWidth = '90%'; // set the maximum width to 90% of the screen width
+    dialogConfig.maxHeight = '90%'; // set the maximum height to 90% of the screen height
+
+    this.dialogRef.open(PopupComponent, dialogConfig)
 
   }
 
@@ -38,7 +52,7 @@ export class CardComponent implements OnInit {
     });
 
   }
-
+  /*{  enterAnimationDuration: '1000ms', exitAnimationDuration: '1000ms', panelClass: 'my-dialog' }*/
 }
 
 

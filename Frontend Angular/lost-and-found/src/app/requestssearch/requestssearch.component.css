@@ -1,22 +1,22 @@
-@media screen and (max-width: 912px){
+@media screen and (max-width: 912px) {
 
-    a.back{
+    a.back {
         font-family: monospace;
         color: black;
         text-decoration: none;
         font-size: 400%;
     }
-    
-    p#search{
-        font-size:220%;
+
+    p#search {
+        font-size: 220%;
     }
 
-    p{
+    p {
         text-align: center;
         font-size: 135%;
     }
-    
-    input{
+
+    input {
         width: 100%;
         display: inline;
         font-size: 80%;
@@ -27,35 +27,35 @@
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
-    mat-form-field{
+    mat-form-field {
         display: inline;
         display: block;
         margin-left: auto;
-          margin-right: auto;
-          padding-left: 0%;
+        margin-right: auto;
+        padding-left: 0%;
         padding-right: 7%;
-          height: 1cm;
-          width: 60%;
-          background-color: #F3F3F3;
+        height: 1cm;
+        width: 60%;
+        background-color: #F3F3F3;
     }
 
-    #image{
+    #image {
         height: 100%;
         display: none;
     }
 
-    .down{
+    .down {
         width: 100%;
         overflow: hidden;
         height: 1cm;
     }
 
-    #dd{
+    #dd {
         display: flex;
         flex-direction: column;
     }
 
-    .main{
+    .main {
         background-color: yellow;
         font-size: 200%;
         height: 1.5cm;
@@ -65,125 +65,130 @@
         margin-right: auto;
     }
 
-    button>img{
+    button>img {
         width: 20%;
         padding-left: 4%;
         padding-top: 1%;
     }
 
-    #ns{
+    #ns {
         width: 0%;
         font-size: 0%;
     }
 
-    #time{
+    #time {
         width: 80%;
         border: 0px;
         padding-left: 0%;
-        
+
     }
 
-    #down{
+    #down {
         width: 100%;
     }
 
-    h6{
+    h6 {
         display: inline;
     }
 
-    button{
+    button {
         background-color: white;
     }
 
 
 
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    @media screen and (min-width: 913px){
-    
-        body{
-        
-            background: linear-gradient(to top right, #6d03ee 0%, #FDD563 100%);
-            margin: 0px;
-            padding: 0%;
-            height: 1234px;
-            color: white;
-        }    
-    
+}
 
-    .all{
-        width: 42%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 913px) {
+
+    body {
+
+        background-color: #221244;
+        margin: 0px;
+        padding: 0%;
+        height: 1234px;
+        color: white;
+    }
+
+
+    .all {
+        width: 45%;
         position: absolute;
         gap: 5%;
-        border-style: solid;
+
         overflow: auto;
         background-color: #341e60;
         top: 34%;
         left: 10%;
         padding-bottom: 1%;
+        border-radius: 10px;
     }
 
-    input{
+    input {
         width: 100%;
         color: black;
         font-size: 80%;
         padding-right: 5%;
         height: 0.7cm;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border-radius: 5px;
     }
 
-    mat-form-field{
-          padding-left: 0%;
-          height: 0.9cm;
-          width: 100%;
-          overflow: hidden;
-          background-color: #F3F3F3;
+    mat-form-field {
+        padding-left: 0%;
+        height: 0.9cm;
+        width: 100%;
+        overflow: hidden;
+        background-color: #F3F3F3;
+        border-radius: 4px;
+
     }
 
-    form>p{
+    form>p {
         font-size: 110%;
-        
+
     }
 
-    .des{
+    .des {
         height: 2.1cm;
     }
 
-    #image{
+    #image {
         height: 100%;
         display: none;
     }
 
-   
 
-    .down{
+
+    .down {
         width: 100%;
         overflow: hidden;
         background-color: #c29fee;
+        border-radius: 4px;
     }
 
-    #dd{
+    #dd {
         display: flex;
         gap: 10%;
         padding-top: 7%;
     }
 
-    .main{
+    .main {
         background-color: #a060ea;
         font-size: 180%;
         height: 1.1cm;
@@ -193,42 +198,47 @@
         margin-right: auto;
     }
 
-    button>img{
+    button>img {
         width: 20%;
         padding-left: 4%;
         padding-top: 1%;
     }
 
-    p#search{
-        font-size:0%;
+    p#search {
+        font-size: 0%;
     }
 
-    .back{
+    .back {
         display: none;
     }
-    
-    #lol{
+
+    #lol {
         background-color: #c29fee;
+        border-radius: 4px;
     }
 
-    #lol>img{
+    #lol>img {
         width: 10%;
         border-radius: 50%;
     }
 
-    #ns{
+    #ns {
         position: absolute;
         top: 18%;
         font-size: 210%;
         left: 10%;
     }
 
-    #time{
+    #time {
         width: 100%;
         border: 0px;
     }
 
-    h6{
+    h6 {
         display: inline;
     }
+
+    a {
+        text-decoration: none;
     }
+}

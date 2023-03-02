@@ -21,6 +21,10 @@ body {
     /* Center items vertically */
 }
 
+a {
+    text-decoration: none
+}
+
 ul {
     list-style: none;
     display: flex;
