@@ -35,7 +35,7 @@ def login_view(request):
 
 @api_view(['GET'])
 def items_lost(request):
-    items = item.objects.filter(category="lost")
+    items = item.objects.filter(category="False")
     serializer = itemSerializer(items, many=True)
     item_lost = serializer.data
     return Response({"lost_items": item_lost})
@@ -43,7 +43,7 @@ def items_lost(request):
 
 @api_view(['GET'])
 def items_found(request):
-    items = item.objects.filter(category="found")
+    items = item.objects.filter(category="True")
     serializer = itemSerializer(items, many=True)
     item_found = serializer.data
     return Response({"found_items": item_found})
